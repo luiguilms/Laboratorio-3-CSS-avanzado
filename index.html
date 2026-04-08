@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Laboratorio Grid Layout</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="contenedor">
+      <header class="header">
+        <div class="header-inner">
+          <div>
+            <h1>Laboratorio Grid Layout</h1>
+          </div>
+        </div>
+      </header>
+
+      <aside class="sidebar">
+        <h2>Navegación</h2>
+        <nav>
+          <a href="#">Inicio</a>
+          <a href="#">Actividades</a>
+          <a href="#">Recursos</a>
+          <a href="#">Contacto</a>
+        </nav>
+      </aside>
+
+      <main class="main">
+        <section class="intro">
+          <h2>Contenido Principal</h2>
+          <p>
+            Esta interfaz fue construida usando CSS Grid Layout. El contenedor
+            principal define una grilla de 2 columnas y 3 filas, y cada bloque
+            (header, sidebar, main, footer) ocupa su área asignada mediante
+            <code>grid-template-areas</code>.
+          </p>
+        </section>
+
+        <div class="tarjetas">
+          <div class="tarjeta">
+            <h3>Elementos Grid</h3>
+            <p>
+              Son los hijos directos del contenedor y se posicionan con
+              <code>grid-column</code> y <code>grid-row</code>.
+            </p>
+            <span class="tarjeta-tag">Hijos</span>
+          </div>
+
+          <div class="tarjeta">
+            <h3>grid-template-areas</h3>
+            <p>
+              Permite nombrar zonas del layout con texto legible, haciendo el
+              CSS fácil de mantener.
+            </p>
+            <span class="tarjeta-tag">Semántico</span>
+          </div>
+
+          <div class="tarjeta">
+            <h3>gap</h3>
+            <p>
+              Define el espacio entre filas y columnas sin usar márgenes
+              manuales en cada elemento.
+            </p>
+            <span class="tarjeta-tag">Espaciado</span>
+          </div>
+
+          <div class="tarjeta">
+            <div class="tarjeta-icono">fr</div>
+            <h3>Unidad fr</h3>
+            <p>
+              <code>1fr</code> ocupa una fracción del espacio disponible de
+              forma flexible y proporcional.
+            </p>
+            <span class="tarjeta-tag">Flexible</span>
+          </div>
+
+          <div class="tarjeta">
+            <h3>Responsivo</h3>
+            <p>
+              Con <code>@media queries</code> el grid puede reorganizarse para
+              adaptarse a pantallas pequeñas.
+            </p>
+            <span class="tarjeta-tag">Adaptable</span>
+          </div>
+        </div>
+      </main>
+
+      <footer class="footer">
+        <p>Curso: Desarrollo Web Integrado</p>
+      </footer>
+    </div>
+  </body>
+</html>
